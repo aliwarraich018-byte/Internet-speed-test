@@ -1,110 +1,71 @@
-/* General Styles */
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internet Speed Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <div class="logo">SpeedTest</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Tools</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-/* Header */
-header {
-    background: #0077b6;
-    color: #fff;
-    padding: 20px 0;
-}
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h1>Check Your Internet Speed</h1>
+        <p>Fast and accurate online speed testing</p>
+        <a href="#tools" class="btn">Test Now</a>
+    </section>
 
-header nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 90%;
-    margin: auto;
-}
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>We provide a simple, fast, and free internet speed testing tool to check your connection quality.</p>
+    </section>
 
-header nav .logo {
-    font-size: 28px;
-    font-weight: bold;
-    color: #fff;
-}
+    <!-- Services/Tools Section -->
+    <section id="services" class="services">
+        <h2>Our Tools</h2>
+        <div class="service-cards">
+            <div class="card">
+                <h3>Download Speed</h3>
+                <p>Measure how fast you can download data from the internet.</p>
+            </div>
+            <div class="card">
+                <h3>Upload Speed</h3>
+                <p>Check how fast your connection can upload files online.</p>
+            </div>
+            <div class="card">
+                <h3>Ping Test</h3>
+                <p>Test your latency and connection stability.</p>
+            </div>
+        </div>
+    </section>
 
-header nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
 
-header nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-/* Hero Section */
-.hero {
-    background: #00b4d8;
-    color: #fff;
-    padding: 100px 20px;
-    text-align: center;
-}
-
-.hero .btn {
-    display: inline-block;
-    padding: 12px 25px;
-    background: #023e8a;
-    color: #fff;
-    text-decoration: none;
-    margin-top: 20px;
-    border-radius: 5px;
-}
-
-/* Sections */
-section {
-    padding: 60px 20px;
-    text-align: center;
-}
-
-.service-cards {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.card {
-    background: #fff;
-    padding: 25px;
-    border-radius: 5px;
-    width: 280px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-/* Contact Form */
-.contact form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    max-width: 400px;
-    margin: auto;
-}
-
-.contact form input,
-.contact form textarea {
-    padding: 12px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-}
-
-.contact form .btn {
-    background: #0077b6;
-    border: none;
-    color: #fff;
-    cursor: pointer;
-}
-
-/* Footer */
-footer {
-    background: #023e8a;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-}
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Internet Speed Test. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
